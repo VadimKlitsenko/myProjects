@@ -1,0 +1,201 @@
+.advantages {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .advantages__list {
+    width: 62.5%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: start; }
+  .advantages__item {
+    cursor: default;
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column; }
+    .advantages__item:hover .advantages__logo-square {
+      transform: rotate(135deg);
+      border-color: #e74c3c; }
+    .advantages__item:hover .advantages__title {
+      color: #e74c3c; }
+  .advantages__logo {
+    width: 76px;
+    height: 76px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .advantages__logo-square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    border: 1px solid #e5e5e5;
+    transition: 0.3s ease-out; }
+  .advantages__title {
+    margin: 30px 0 20px;
+    position: relative;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: #6a6a6a;
+    text-transform: uppercase;
+    transition: 0.3s ease-out; }
+    .advantages__title::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: calc(50% - 20px);
+      width: 40px;
+      height: 1px;
+      background-color: #747474; }
+  .advantages__descr {
+    margin: 0;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    padding: 0 25px; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .header__title {
+    margin: 0;
+    padding: 30px 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #6a6a6a;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+  .header__descr {
+    position: relative;
+    margin: 0;
+    font-famsily: "Open Sans";
+    font-size: 14px;
+    color: #999; }
+    .header__descr::after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 8px);
+      left: calc(50% - 18px);
+      width: 36px;
+      height: 36px;
+      box-sizing: border-box;
+      border: 14px solid #fff;
+      border-radius: 50%;
+      background-color: #e74c3c; }
+  .header__underline {
+    margin: 25px 0 0;
+    width: 200px;
+    height: 1px;
+    background-color: #999;
+    border: none; }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .navbar__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; }
+  .navbar__item {
+    position: relative;
+    padding: 0 20px; }
+    .navbar__item::before {
+      position: absolute;
+      content: "/";
+      top: 0;
+      left: 0;
+      color: #999; }
+    .navbar__item:first-child::before {
+      display: none; }
+  .navbar__link-mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: transparent; }
+  .navbar__link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999; }
+    .navbar__link:hover {
+      color: #e74c3c;
+      font-weight: 600; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content); }
+  .cards__item {
+    position: relative;
+    background-color: #e74c3c; }
+    .cards__item:hover .cards__descr {
+      opacity: 1;
+      transform: translateY(-100%);
+      transition: 0.2s ease-out; }
+    .cards__item:hover .cards__img img {
+      opacity: 0.2; }
+  .cards__img img {
+    display: block;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    transition: 0.1s ease; }
+  .cards__descr {
+    opacity: 0;
+    position: absolute;
+    padding: 20px 5% 45px 10%;
+    color: #fff;
+    cursor: default; }
+  .cards__topline {
+    margin: 0;
+    width: 45px;
+    height: 4px;
+    border: none;
+    background-color: #fff; }
+  .cards__title {
+    margin: 0;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600; }
+  .cards__text {
+    margin: 0;
+    font-family: "Open Sans";
+    font-size: 14px; }
+
+.works .header {
+  padding-bottom: 70px; }
+
+.works .navbar {
+  padding-bottom: 40px; }
+
+body {
+  font-family: "SourceSansPro"; }
+
+body, ul, li, figure {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=main.css.map */

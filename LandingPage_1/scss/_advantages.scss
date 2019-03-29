@@ -1,0 +1,65 @@
+@import "variables";
+@import "mixins";
+
+.advantages {
+  height: 100vh;
+  @include flex(center, center);
+  &__list {
+    width: 62.5%;
+    list-style: none;
+    @include flex(space-between, start);
+  }
+  &__item{
+    cursor: default;
+    width: 25%;
+    @include flex(start, center);
+    flex-direction: column;
+    &:hover .advantages__logo-square {
+      transform: rotate(135deg);
+      border-color: $red;
+    }
+    &:hover .advantages__title {
+      color: $red;
+    }
+  }
+  &__logo {
+    width: 76px;
+    height: 76px;
+    position: relative;
+    @include flex(center, center);
+  }
+  &__logo-square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    border: 1px solid $logo-border-color;
+    transition: 0.3s ease-out;
+  }
+  &__title {
+    margin: 30px 0 20px;
+    position: relative;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: $header-color;
+    text-transform: uppercase;
+    transition: 0.3s ease-out;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: calc(50% - 20px);
+      width: 40px;
+      height: 1px;
+      background-color: $underline-color;
+    }
+  }
+  &__descr {
+    margin:  0;
+    font-size: 13px;
+    color: $font-color;
+    text-align: center;
+    padding: 0 25px;
+  }
+}

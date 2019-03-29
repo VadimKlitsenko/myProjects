@@ -1,0 +1,42 @@
+@import "variables";
+@import "mixins";
+
+.header {
+  @include flex(center, center);
+  flex-direction: column;
+  &__title {
+    margin: 0;
+    padding: 30px 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: $header-color;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  &__descr {
+    position: relative;
+    margin: 0;
+    font-famsily: "Open Sans";
+    font-size: 14px;
+    color: $font-color;
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 8px);
+      left: calc(50% - 18px);
+      width: 36px;
+      height: 36px;
+      box-sizing: border-box;
+      border: 14px solid #fff;
+      border-radius: 50%;
+      background-color: $red;
+    }
+  }
+  &__underline {
+    margin: 25px 0 0;
+    width: 200px;
+    height: 1px;
+    background-color: $font-color;
+    border: none;
+  }
+}

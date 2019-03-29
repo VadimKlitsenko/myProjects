@@ -1,0 +1,52 @@
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  &__item{
+    position: relative;
+    background-color: $red;
+    &:hover .cards__descr{
+      opacity: 1;
+      transform: translateY(-100%);
+      transition: 0.2s ease-out;
+    }
+    &:hover .cards__img img{
+      opacity: 0.2;
+    }
+  }
+  &__img{
+    img{
+      display: block;
+      opacity: 1;
+      height: 100%;
+      width: 100%;
+      transition: 0.1s ease;
+    }
+  }
+  &__descr{
+    opacity: 0;
+    position: absolute;
+    padding: 20px 5% 45px 10%;
+    color: #fff;
+    cursor: default;
+  }
+  &__topline {
+    margin: 0;
+    width: 45px;
+    height: 4px;
+    border: none;
+    background-color: #fff;
+  }
+  &__title {
+    margin: 0;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__text{
+    margin: 0;
+    font-family: "Open Sans";
+    font-size: 14px;
+  }
+}
