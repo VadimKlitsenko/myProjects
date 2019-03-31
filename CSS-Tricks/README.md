@@ -1,0 +1,1 @@
+Only descktop wersion original website : [CSS-Tricks.com](https://css-tricks.com/);
