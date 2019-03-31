@@ -1,0 +1,1 @@
+Only descktop and tablet wersion original website : [Kino50.net](https://kino50.org/f/browse);
