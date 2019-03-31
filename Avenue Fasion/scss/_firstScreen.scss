@@ -1,0 +1,23 @@
+.firstScreen{
+  position: relative;
+  height: 100vh;
+  background:linear-gradient(to top, rgba(89,89,89,0.75), rgba(89,89,89,0.75)),  url("../img/bg.png") no-repeat center/cover;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__header{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    span {
+      font-weight: 600;
+    }
+  }
+  &__descr{
+    font-size: 30px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,26 @@
+.scroll{
+}
+.scroll__list{
+    list-style: none;
+    @include display(flex, start, center);
+    padding: 10px 20px;
+    .scroll__item+.scroll__item{
+        margin-left: 10px;
+    }
+}
+.scroll__item{
+    width: 25px;
+    height: 25px;
+    color: $txt-color;
+    text-align: center;
+}
+.scroll__link{
+    @include linkfix;
+    @include display(flex, center, center);
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    &:hover{
+        color: #fff;
+    }
+}

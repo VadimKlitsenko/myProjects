@@ -1,0 +1,21 @@
+@import "../functions";
+@import "../variables";
+@import "../mixins";
+
+.header{
+  justify-content: center;
+  flex-direction: row;
+  &__logo{
+    margin-right: 1.82vw;
+    width: 6.7vw;
+    height: 6.7vw;
+    padding: 1.56vw 1vw;
+    border-radius: 1.3vw;
+  }
+  &__title{
+    font-size: 4.16vw;
+  }
+  &__descr{
+    font-size: 1.56vw;
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../variables";
+@import "../../mixins";
+
+.footer{
+  box-sizing: border-box;
+  padding: 18vh 6.25% 2vh;
+  height: 100vh;
+  background: linear-gradient(rgba(9,12,53,0.9), rgba(9,12,53,0.9)), url(../img/game_767.jpg) no-repeat center/cover;
+  @include flex(space-between, center);
+  flex-direction: column;
+}

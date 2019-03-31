@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Regular.woff2), url(../fonts/OpenSans-Regular.woff), url(../fonts/OpenSans-Regular.ttf);
+  font-weight: 400; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Bold.woff2), url(../fonts/OpenSans-Bold.woff), url(../fonts/OpenSans-Bold.ttf);
+  font-weight: 600; }
+
+@media (max-width: 425px) {
+  .logo {
+    width: 42.1875vw;
+    height: 12.5vw; } }
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .download__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5e42b0;
+    width: 87.5vw;
+    font-size: 2.5vw;
+    color: #fff;
+    border-radius: 100px; }
+  .download__link + .download__link {
+    margin-top: 4.6875vw; }
+  .download__svg {
+    box-sizing: border-box;
+    flex-basis: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.25vw 0; }
+    .download__svg svg {
+      width: 7.8125vw;
+      height: 7.8125vw;
+      padding-right: 3.125vw; }
+  .download__txt {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase; }
+    .download__txt_bold {
+      font-weight: 600; }
+
+.header {
+  margin: 0;
+  width: 100%;
+  height: 35.08772vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+  .header__logo {
+    box-sizing: border-box;
+    padding: 2.10526vh 2.5vw;
+    width: 23.4375vw;
+    height: 23.4375vw;
+    background: linear-gradient(to top right, #51339d, #7650D8);
+    border-radius: 3.75vw; }
+  .header__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+  .header__title {
+    margin: 0;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10vw; }
+  .header__descr {
+    margin: 0;
+    font-size: 4.375vw;
+    color: #A495CC;
+    text-transform: uppercase; }
+
+.first-screen {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  padding: 5.26316vh 6.25% 14.03509vh 6.25%;
+  background: linear-gradient(rgba(9, 12, 53, 0.9), rgba(9, 12, 53, 0.9)), url(../img/football_767.jpg) no-repeat center/cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+  .first-screen__title {
+    font-size: 8.75vw;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; }
+    .first-screen__title_right {
+      align-self: flex-end;
+      width: 75%; }
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.advantages__item {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15.625vw 6.25%; }
+  .advantages__item:nth-child(2) {
+    padding: 0; }
+  .advantages__item_bg-grey {
+    background-color: #f6f4fa; }
+  .advantages__item_bg-lightgrey {
+    background-color: #fafafa; }
+  .advantages__item_bg-lightpurple {
+    background-color: #5e42b0;
+    color: #f0eef8; }
+  .advantages__item_bg-darkpurple {
+    background-color: #0a0e34;
+    color: #f0eef8; }
+  .advantages__item_img {
+    background: linear-gradient(to bottom, #fff 82%, #fafafa 18%);
+    text-align: center; }
+
+.advantages__header, .advantages__title {
+  text-transform: uppercase; }
+
+.advantages__header {
+  margin: 0;
+  font-size: 15.625vw;
+  font-weight: 600;
+  color: #e7e7e7; }
+
+.advantages__img_basketballer img {
+  width: 87.5%; }
+
+.advantages__title {
+  margin: 0;
+  padding-left: 7.5vw;
+  position: relative;
+  font-size: 7.1875vw;
+  font-weight: 600;
+  color: #c1c1c1; }
+  .advantages__title::before {
+    position: absolute;
+    left: 0;
+    transform: translate(0, 1.25vw);
+    content: "01";
+    color: #000;
+    font-size: 5vw; }
+  .advantages__title_02::before {
+    content: "02"; }
+  .advantages__title_03::before {
+    content: "03"; }
+  .advantages__title::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    transform: translate(0, 7.5vw);
+    width: 5.625vw;
+    height: 1.25vw;
+    background-color: #8f7bc8;
+    border-radius: 1.25vw; }
+  .advantages__title_03::after {
+    background-color: #fff; }
+
+.action__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.action__img {
+  width: 100%; }
+  .action__img img {
+    width: 100%; }
+
+.action__content {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  padding: 10.9375vw 6.25vw 23.4375vw; }
+  .action__content::before {
+    content: "01";
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 21.875vw;
+    height: 21.875vw;
+    background: #5e42b0;
+    transform: translateY(-87.5%);
+    font-weight: 600;
+    color: #fff;
+    font-size: 4.375vw; }
+  .action__content_02::before {
+    content: "02"; }
+  .action__content_03::before {
+    content: "03"; }
+  .action__content::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    transform: translate(8.125vw, -5vw);
+    width: 5.625vw;
+    height: 1.25vw;
+    background-color: #8f7bc8;
+    border-radius: 1.25vw; }
+
+.action__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 8.75vw;
+  color: #c1c1c1; }
+
+.action__text {
+  font-size: 5vw;
+  margin-bottom: 0; }
+
+.footer {
+  box-sizing: border-box;
+  padding: 18vh 6.25% 2vh;
+  height: 100vh;
+  background: linear-gradient(rgba(9, 12, 53, 0.9), rgba(9, 12, 53, 0.9)), url(../img/game_767.jpg) no-repeat center/cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+
+:root {
+  font-family: "OpenSans"; }
+
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+.main{
+    background-color: $main-bg;
+    color: $txt-color;
+    font-family: sans-serif;
+}
+.title{
+    font-size: 26px;
+    margin: 0;
+    padding: 30px 20px;
+}
+.main-descr{
+    padding: 20px 100px 100px 20px;
+    margin: 0;
+}
+@import "sort";
+@import "films";
+@import "scroll";

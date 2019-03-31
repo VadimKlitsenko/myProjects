@@ -1,0 +1,59 @@
+@import "../../functions";
+
+.advantages{
+  &__list{
+    position: relative;
+  }
+  &__item{
+    padding: vw1920(60) 0;
+    &_right{
+      padding-left: 55%;
+      padding-right: vw1920(250);
+      &:nth-child(2){
+        width: 50%;
+        position: absolute;
+        top: vw1920(50);
+        left: 0;
+        background: transparent;
+        text-align: right;
+      }
+    }
+    &_left{
+      padding-right: 55%;
+      padding-left: vw1920(250);
+      &:nth-child(2){
+        width: 60%;
+        position: absolute;
+        top: vw1920(50);
+        right: vw1920(140);
+        background: transparent;
+        text-align: right;
+      }
+    }
+  }
+  &__img_athlet{
+    img{
+      width: 65%;
+    }
+  }
+  &__title{
+    padding-left: vw1920(30);
+    font-size: vw1920(36);
+    &::before{
+      transform: translate(0, vw1920(7));
+      font-size: vw1920(18);
+    }
+    &::after{
+      font-size: vw1920(18);
+      width: vw1920(18);
+      height: vw1920(4);
+      transform: translate(0, vw1920(34));
+    }
+  }
+  &__header{
+    font-size: vw1920(80);
+  }
+  &__text{
+    fot-size: vw1920(20);
+  }
+}

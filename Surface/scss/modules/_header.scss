@@ -1,0 +1,37 @@
+@import "../functions";
+@import "../variables";
+@import "../mixins";
+
+.header{
+  margin: 0;
+  width: 100%;
+  height: vh320(200);
+  @include flex(space-between, center);
+  flex-direction: column;
+  &__logo{
+    box-sizing: border-box;
+    padding: vh320(12) vw320(8);
+    width: vw320(75);
+    height: vw320(75);
+    background: $logo-gradient;
+    border-radius: vw320(12);
+  }
+  &__content{
+    @include flex(center, center);
+    flex-direction: column;
+    text-align: center;
+  }
+  &__title{
+    margin: 0;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: vw320(32);
+  }
+  &__descr{
+    margin: 0;
+    font-size: vw320(14);
+    color: $under-header-color;
+    text-transform: uppercase;
+  }
+}

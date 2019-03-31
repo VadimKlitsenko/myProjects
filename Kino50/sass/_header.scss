@@ -1,0 +1,47 @@
+.header{
+    background-color: $header-bg;
+    @include display(grid , 70px calc(100% - 210px) 70px 70px, repeat(2, 1fr));
+}
+
+.menu-btn{
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+.logo{
+    @include linkfix;
+    @include display(flex, start, center);
+    font: bold 25px sans-serif;
+    color: #fff;
+}
+.search{
+    @include display(flex, center, center);
+    margin: 15px;
+    svg{
+        fill: $txt-nav;
+    }
+    &:hover svg{
+            fill: #fff;
+        }
+}
+.navbar{
+    grid-column: 2/5;
+    grid-row: 2/3;
+    @include display(flex, start, center);
+}
+.navbar__link{
+    @include linkfix;
+    @include display(flex, center, center);
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0 20px;
+    font: 14px sans-serif;
+    color: $txt-nav;
+    &:hover{
+        color: #fff;
+    }
+}
+

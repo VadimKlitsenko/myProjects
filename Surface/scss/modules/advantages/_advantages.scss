@@ -1,0 +1,88 @@
+@import "../../functions";
+@import "../../variables";
+@import "../../mixins";
+
+.advantages {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include flex(center, center);
+    flex-direction: column;
+  }
+  &__item {
+    box-sizing: border-box;
+    width: 100%;
+    padding: vw320(50) 6.25%;
+    &:nth-child(2){
+      padding: 0;
+    }
+    &_bg-grey {
+      background-color: $bg-grey;
+    }
+    &_bg-lightgrey {
+      background-color: $bg-lightgrey;
+    }
+    &_bg-lightpurple {
+      background-color: $purple;
+      color: $txt-white-color;
+    }
+    &_bg-darkpurple {
+      background-color: $darkpurple;
+      color: $txt-white-color;
+    }
+    &_img {
+      background: linear-gradient(to bottom, #fff 82%, $bg-lightgrey 18%);
+      text-align: center;
+    }
+  }
+  &__header, &__title {
+    text-transform: uppercase;
+  }
+  &__header{
+    margin: 0;
+    font-size: vw320(50);
+    font-weight: 600;
+    color: $h2-color;
+  }
+  &__img_basketballer{
+    img{
+      width: 87.5%;
+    }
+  }
+  &__title{
+    margin: 0;
+    padding-left: vw320(24);
+    position: relative;
+    font-size: vw320(23);
+    font-weight: 600;
+    color: $h3-color;
+    &::before{
+      position: absolute;
+      left: 0;
+      transform: translate(0, vw320(4));
+      content: "01";
+      color: #000;
+      font-size: vw320(16);
+    }
+    &_02::before{
+      content: "02";
+    }
+    &_03::before{
+      content: "03";
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      left: 0;
+      transform: translate(0, vw320(24));
+      width: vw320(18);
+      height: vw320(4);
+      background-color: $purple-underline;
+      border-radius: vw320(4);
+    }
+    &_03::after{
+      background-color: #fff;
+    }
+  }
+}

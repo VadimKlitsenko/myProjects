@@ -1,0 +1,63 @@
+$header-bg: #DF691A;
+$txt-nav: #FBEBE0;
+$main-bg: #2F4051;
+$footer-bg: #424242;
+$txt-nav: #FBEBE0;
+$txt-color: #EBEBEB;
+$footer-txt: #9E9E9E;
+
+@mixin linkfix(){
+    text-decoration: none;
+}
+@mixin display($display, $grid-template-columns, $grid-template-rows){
+    @if $display == block{
+        display: block;
+    }
+    @if $display == flex{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: $grid-template-columns;
+        align-items: $grid-template-rows;
+    }
+    @if $display == grid{
+        display: -webkit-grid;
+        display: -moz-grid;
+        display: -ms-grid;
+        display: -o-grid;
+        display: grid;
+        grid-template-columns: $grid-template-columns;
+        grid-template-rows: $grid-template-rows;
+        @content;
+    }
+}
+
+body{
+    @include display(grid, 220px 1fr, repeat(3, max-content)){
+        grid-template-areas: 
+            "header header"
+            "aside main"
+            "footer footer"
+    };
+    margin: 0;
+    font-family: sans-seif;
+}
+.header{
+    grid-area: header;
+}
+.aside{
+    grid-area: aside;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+
+@import "header";
+@import "aside";
+@import "main";
+@import "footer";

@@ -1,0 +1,20 @@
+.search{
+  display: flex;
+  justify-content: center;
+  &__input{
+    width: 70%;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #e7e7e7;
+    border-right: none;
+    padding-left: 10px;
+    &:active, &:hover, &:focus{
+      outline: none;
+    }
+  }
+  &__btn{
+    background-color: transparent;
+    border: 1px solid #e7e7e7;
+    border-left: none;
+  }
+}

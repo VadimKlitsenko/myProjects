@@ -1,0 +1,28 @@
+//functions variables mixins
+
+@import "variables";
+@import "mixins";
+@import "modules/fonts";
+
+//standart modules
+
+@import "modules/logo-txt";
+@import "modules/download";
+@import "modules/header";
+
+//modules
+
+@import "modules/first-screen/first-screen";
+@import "modules/advantages/advantages";
+@import "modules/act1on/action";
+@import "modules/footer/footer";
+
+:root{
+  font-family: "OpenSans";
+}
+body{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}

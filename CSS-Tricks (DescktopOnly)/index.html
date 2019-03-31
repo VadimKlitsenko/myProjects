@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-Tricks</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#" class="logo__link"><span><i class="fas fa-star-of-life logo__img"></i></span>css-tricks</a>
+        </div>
+        <nav class="menu">
+            <a href="#" class="menu__link menu__link_orange"><i class="far fa-file-alt"></i>Articles</a>
+            <a href="#" class="menu__link menu__link_rose"><i class="far fa-play-circle"></i>Videos</a>
+            <a href="#" class="menu__link menu__link_red"><i class="fas fa-book"></i>Almanac</a>
+            <a href="#" class="menu__link menu__link_violet"><i class="far fa-file-code"></i>Snippets</a>
+            <a href="#" class="menu__link menu__link_blue"><i class="far fa-envelope-open"></i>Newsletter</a>
+            <a href="#" class="menu__link menu__link_green"><i class="fas fa-briefcase"></i>Jobs</a>
+            <a href="#" class="menu__link menu__link_lightgreen"><i class="far fa-map"></i>Guides</a>
+        </nav>
+        <form class="search">
+            <input class="search__field" type="text" placeholder="e.g. flexbox">
+            <button class="search__button" type="submit"><img src="img/.svg" alt=""><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+    <main class="content">
+        <article class="article article-main">
+            <p class="article__type"><strong>Fresh Article</strong><span> January 31, 2019</span></p>
+            <h1 class="article-main__header"><a class="article-header__link" href="#">The Many Ways to Change an SVG Fill on Hover (and When to Use Them)</a></h1>
+            <div class="article__inf">
+                <a class="article-inf__photo" href="#"></a>
+                <div class="article-inf__descr">
+                    <p>Author</p>
+                    <a href="#">Cassie Evans</a>
+                </div>
+                <div class="article-inf__descr">
+                    <p>2 Comments</p>
+                    <a href="#">Join the Conversation <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article__txt">
+                <p>SVG is a great format for icons. Vector formats look crisp and razor sharp, no matter the size or device — and we get tons of design control when using them inline.</p>
+                <p>SVG also gives us another powerful feature: the ability to manipulate their properties with CSS. As a result, we can make quick and simple interactions where it used to take crafty CSS tricks or swapping out entire image files.</p>
+                <p>Those interactions include changing color on hover states. It …<a class="article-txt__read" href="#">Read article</a></p>
+            </div>
+            <nav class="article__tag-block">
+                <a class="article__tag" href="#">filters</a>
+                <a class="article__tag" href="#">svg</a>
+                <a class="article__tag" href="#">svg filters</a>
+            </nav>
+        </article>
+        <aside class="advert">
+            <div class="advert__banner">
+                <img class="advert-banner__img" src="img/banner.png" alt="">
+                <a href="#" class="advert-banner__author"></a>
+                <p class="advert-banner__txt"><a class="advert-banner__link" href="#">Wufoo</a> powers all our web forms here at CSS-Tricks, and has for over a decade!</p>
+            </div>
+        </aside>
+        <section class="article-nav">
+            <header class="article-nav__header">
+                <h2>Popular this mounth</h2>
+                <p>Sponsored by <a href="#">monday.com</a></p>
+            </header>
+            <div class="article-nav__scroll">
+                <article class="article-nav-scroll__item">
+                    <p><span>Article</span>Jan 21, 2019</p>
+                    <h3>The Great Divide</h3>
+                    <div>
+                        <a href="#"><img src="img/" alt=""></a>
+                        <div>
+                            <p>Author</p>
+                            <a href="#">Chris Coyier</a>
+                        </div>
+                    </div>
+                    <a href="#">front-end developer</a>
+                </article>
+                <article class="article-nav-scroll__item">
+                    <p><span>Article</span>Jan 9, 2019</p>
+                    <h3>New ES2018 Features Every JavaScript Developer Should Know</h3>
+                    <div>
+                        <a href="#"><img src="img/" alt=""></a>
+                        <div>
+                            <p>Author</p>
+                            <a href="#">Faraz Kelhini</a>
+                        </div>
+                    </div>
+                    <a href="#">ES2018</a>
+                </article>
+                <article class="article-nav-scroll__item">
+                    <p><span>Article</span>Jan 4, 2019</p>
+                    <h3>2018 Staff Favorites</h3>
+                    <div>
+                        <a href="#"><img src="img/" alt=""></a>
+                        <div>
+                            <p>Author</p>
+                            <a href="#">Geoff Graham</a>
+                        </div>
+                    </div>
+                    <a href="#">favorites</a>
+                </article>
+                <article class="article-nav-scroll__item">
+                    <p><span>Article</span>Jan 9, 2019</p>
+                    <h3>#168: CSS-in-JS</h3>
+                    <div>
+                        <a href="#"><img src="img/" alt=""></a>
+                        <div>
+                            <p>Author</p>
+                            <a href="#">Chris Coyier</a>
+                        </div>
+                    </div>
+                    <a href="#">css-in-js</a>
+                    <a href="#">emotion</a>
+                    <a href="#">glamerous</a>
+                    <a href="#">styled components</a>
+                </article>
+                <article class="article-nav-scroll__item">
+                    <p><span>Article</span>Jan 8, 2019</p>
+                    <h3>Sass Techniques from the Trenches</h3>
+                    <div>
+                        <a href="#"><img src="img/" alt=""></a>
+                        <div>
+                            <p>Author</p>
+                            <a href="#">Buddy Reno</a>
+                        </div>
+                    </div>
+                    <a href="#">sass</a>
+                </article>
+                <article class="article-nav-scroll__item">
+                    <p><span>Article</span>Jan 17, 2019</p>
+                    <h3>2019 CSS Wishlist</h3>
+                    <div>
+                        <a href="#"><img src="img/" alt=""></a>
+                        <div>
+                            <p>Author</p>
+                            <a href="#">Chris Coyier</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-nav-scroll__item">
+                    <p><span>Article</span>Jan 7, 2019</p>
+                    <h3>Reader Mode: The Button to Beat</h3>
+                    <div>
+                        <a href="#"><img src="img/" alt=""></a>
+                        <div>
+                            <p>Author</p>
+                            <a href="#">Eric Bailey</a>
+                        </div>
+                    </div>
+                    <a href="#">accessibility</a>
+                </article>
+                <article class="article-nav-scroll__item">
+                    <p><span>Article</span>Jan 3, 2019</p>
+                    <h3>Multi-Line Inline Gradient</h3>
+                    <div>
+                        <a href="#"><img src="img/" alt=""></a>
+                        <div>
+                            <p>Author</p>
+                            <a href="#">Chris Coyier</a>
+                        </div>
+                    </div>
+                    <a href="#">box-decoration-break</a>
+                    <a href="#">gradients</a>
+                    <a href="#">mix-blend-mode</a>
+                </article>
+                <article class="article-nav-scroll__item">
+                    <p><span>Article</span>Jan 18, 2019</p>
+                    <h3>STAR Apps: A New Generation of Front-End Tooling for Development Workflows</h3>
+                    <div>
+                        <a href="#"><img src="img/" alt=""></a>
+                        <div>
+                            <p>Author</p>
+                            <a href="#">Shawn Wang</a>
+                        </div>
+                    </div>
+                    <a href="#">design tooling</a>
+                    <a href="#">javascript framework</a>
+                    <a href="#">trend</a>
+                </article>
+                <article class="article-nav-scroll__item">
+                    <p><span>Article</span>Jan 20, 2019</p>
+                    <h3>Regarding CSS’s Global Scope</h3>
+                    <div>
+                        <a href="#"><img src="img/" alt=""></a>
+                        <div>
+                            <p>Author</p>
+                            <a href="#">Chris Coyier</a>
+                        </div>
+                    </div>
+                    <a href="#">css-in-js</a>
+                    <a href="#">global scope</a>
+                </article>
+                <article class="article-nav-scroll__item">
+                    <p><span>Article</span>Jan 11, 2019</p>
+                    <h3>Re: Pleasing Color Palettes</h3>
+                    <div>
+                        <a href="#"><img src="img/" alt=""></a>
+                        <div>
+                            <p>Author</p>
+                            <a href="#">Chris Coyier</a>
+                        </div>
+                    </div>
+                    <a href="#">accessibility color</a>
+                    <a href="#">color</a>
+                    <a href="#">generative color</a>
+                </article>
+            </div>
+        </section>
+        <aside class="advertising">
+            <div class="advert__banner">
+                <img class="advert-banner__img" src="img/banner.png" alt="">
+                <a href="#" class="advert-banner__author"></a>
+                <p class="advert-banner__txt"><a class="advert-banner__link" href="#">Wufoo</a> powers all our web forms here at CSS-Tricks, and has for over a decade!</p>
+            </div>
+            <div class="advert__banner">
+                <img class="advert-banner__img" src="img/banner.png" alt="">
+                <a href="#" class="advert-banner__author"></a>
+                <p class="advert-banner__txt"><a class="advert-banner__link" href="#">Wufoo</a> powers all our web forms here at CSS-Tricks, and has for over a decade!</p>
+            </div>
+            <div class="advert__banner">
+                <img class="advert-banner__img" src="img/banner.png" alt="">
+                <a href="#" class="advert-banner__author"></a>
+                <p class="advert-banner__txt"><a class="advert-banner__link" href="#">Wufoo</a> powers all our web forms here at CSS-Tricks, and has for over a decade!</p>
+            </div>
+            <div class="advert__banner">
+                <img class="advert-banner__img" src="img/banner.png" alt="">
+                <a href="#" class="advert-banner__author"></a>
+                <p class="advert-banner__txt"><a class="advert-banner__link" href="#">Wufoo</a> powers all our web forms here at CSS-Tricks, and has for over a decade!</p>
+            </div>
+            <div class="advert__banner">
+                <a href="#"><img src="" alt=""></a>
+                <a href="3">Limited time offer: Get 10 free Adobe Stock images.</a>
+                <a href="#">ads via Carbon</a>
+            </div>
+        </aside>
+        <section class="article-block">
+            <article class="article article_size">
+                <p class="article__type"><span class="article-type__sponsor">Sponsored </span><strong>Article</strong><span>January 31, 2019</span></p>
+                <h2 class="article__header"><a class="article-header__link" href="#">Forms that Move With You with Wufoo</a></h2>
+                <div class="article__txt">
+                    <p>I've been into the idea of JAMstack lately. In fact, it was at the inaugural JAMstack_conf that I gave a talked called The All-Powerful Font-End Developer. My overall point there was that there are all these services that we can leverage as front-end developers to build complete websites without needing much help from other disciplines — if any at all.</p>
+                    <p>Sometimes, the services we reach for these days are modern and fancy, like a real-time database solution with authentication … <a class="article-txt__read" href="#">Read article</a></p>
+                </div>
+            </article>
+            <article class="article artlink">
+                <div class="artlink-main">
+                    <p class="article__type"><a class="artlink__type" href="#"></a><strong>Link</strong><span>January 30, 2019</span></p>
+                    <h2 class="article__header"><a class="article-header__link" href="#">Multiple Background Clip</a></h2>
+                    <p class="artlink__form">From <a class="article-form__link" href="#">www.stefanjudis.com</a></p>
+                    <div class="article__txt">
+                        <p>You know how you can have <a class="article-txt__link" href="#">multiple backgrounds</a>?</p>
+                        <pre class="article-txt__code"><code>
+css
+
+body {
+    background-image: 
+        url(image-one.jpg),
+        url(image-two.jpg);
+}
+                        </code></pre>
+                        <p>That's just <code>background-image</code>. You can set their position too, as you might expect. We'll shorthand it:</p>
+                        <pre class="article-txt__code"><code>
+css
+
+body {
+    background: 
+        url(image-one.jpg) no-repeat top right,
+        url(image-two.jpg) no-repeat bottom left;
+}
+                        </code></pre>
+                        <p>I snuck <code>background-repeat</code> in there just for fun. Another one you might not think of setting for multiple different backgrounds, though, is <code>background-clip</code>. In this linked article, Stefan Judis notes that this unlocks some …</p>
+                        <div class="artlink__links">
+                            <a href="#">Read Article</a>
+                            <a href="#">Visit Link</a>
+                        </div>
+                        <div class="article__tag-block">
+                            <a class="article__tag" href="#">background</a>
+                            <a class="article__tag" href="#">background-clip</a>
+                            <a class="article__tag" href="#">multiple backgrounds</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="artlink__author">
+                    <a href="#"><img src="img/Photo_Cassie_Evans.jpg" alt="">Shared by <span>Chris Coyier</span></a>
+                </div>
+            </article>
+            <article class="article article_size">
+                <p class="article__type"><strong>Article</strong><span>January 30, 2019</span></p>
+                <h2 class="article__header"><a class="article-header__link" href="#">The Importance of One-on-Ones</a></h2>
+                <div class="article__inf">
+                    <a class="article-inf__photo" href="#"><img src="" alt=""></a>
+                    <div class="article-inf__descr">
+                        <p>Author</p>
+                        <a href="#">Sarah Drancer</a>
+                    </div>
+                    <div class="article-inf__descr">
+                        <p>2 Comments</p>
+                        <a href="#">Join the Conversation<img src="img/.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="article__txt">
+                    <p>What do we mean by 1:1 (pronounced one-on-one)? This is typically a private conversation between an Engineering Manager/Lead and their Employee. I personally have been a Lead, a Manager, and also an Independent Contributor/Software Engineer, so I’ve sat at each side of the table. I’ve both had great experiences on each side and have made mistakes on each side. That said, I'm going to cover some meditations on the subject because 1:1s open opportunities for personal and professional growth when … <a class="article-txt__read" href="#">Read article</a></p>
+                </div>
+                <nav class="article__tag-block">
+                    <a class="article__tag" href="#">career</a>
+                    <a class="article__tag" href="#">engineering management</a>
+                    <a class="article__tag" href="#">leading</a>
+                    <a class="article__tag" href="#">meeting</a>
+                </nav>
+            </article>
+            <article class="article article_size">
+                <p class="article__type"><strong>Article</strong><span>January 29, 2019</span></p>
+                <h2 class="article__header"><a class="article-header__link" href="#">Slide an Image to Reveal Text with CSS Animations</a></h2>
+                <div class="article__inf">
+                    <a class="article-inf__photo" href="#"></a>
+                    <div class="article-inf__descr">
+                        <p>Author</p>
+                        <a href="#">Jasper Ekstrom</a>
+                    </div>
+                    <div class="article-inf__descr">
+                        <p>6 Comments</p>
+                        <a href="#">Join the Conversation<img src="img/.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="article__txt">
+                    <p>I want to take a closer look at the <a class="article-txt__link" href="#">CSS animation property</a> and walk through an effect that I used on my own <a class="article-txt__link" href="#">portfolio website</a>: making text appear from behind a moving object. Here’s an <a class="article-txt__link" href="#">isolated example</a> if you’d like to see the final product. … <a class="article-txt__read" href="#">Read article</a></p>
+                </div>
+                <nav class="article__tag-block">
+                    <a class="article__tag" href="#">css animation</a>
+                </nav>
+            </article>
+            <section class="advertices">
+                <a class="advertices__link" href="#">
+                    <h3 class="advertices-link__header">Jupiter X WordPress Theme</h3>
+                    <p class="advertices-link__descr">Build Unbuildable WordPress Websites!</p>
+                    <img class="advertices-link__img" src="img/advertises_1.jpg" alt="">
+                </a>
+                <a class="advertices__link" href="#">
+                    <h3 class="advertices-link__header">The Divi Theme</h3>
+                    <p class="advertices-link__descr">Download the Ultimate WordPress Theme including our advanced Drag & Drop builder</p>
+                    <img class="advertices-link__img" src="img/advertises_2.png" alt="">
+                </a>
+            </section>
+            <article class="article artlink">
+                <div class="artlink-main">
+                    <p class="article__type"><a class="artlink__type" href="#"><img src="" alt=""></a><strong>Link</strong><span>January 29, 2019</span></p>
+                    <h2 class="article__header"><a class="article-header__link" href="#">Designing for the web ought to mean making HTML and CSS</a></h2>
+                    <p class="artlink__form">From <a class="article-form__link" href="#">m.signalvnoise.com <img src="" alt=""></a></p>
+                    <div class="article__txt">
+                        <p>David Heinemeier Hansson has written an interesting post about the current state of web design and how designers ought to be able to still work on the code side of things:</p>
+                        <p>We build using server-side rendering, Turbolinks, and Stimulus. All tools that are approachable and realistic for designers to adopt, since the major focus is just on HTML and CSS, with a few sprinkles of JavaScript for interactivity.</p>
+                        <p>And it’s not like it’s some well kept secret! In fact, every</p>
+                        <p>...</p>
+                    </div>
+                    <div class="artlink__links">
+                        <a href="#">Read Article</a>
+                        <a href="#">Visit Link</a>
+                    </div>
+                    <div class="article__tag-block">
+                        <a class="article__tag" href="#">job titles</a>
+                    </div>
+                </div>
+                <div class="artlink__author">
+                    <a href="#"><img src="img/Photo_Cassie_Evans.jpg" alt="">Shared by <span>Robin Rendle</span></a>
+                </div>
+            </article>
+            <article class="article article_size">
+                <p class="article__type"><strong>Article</strong><span>January 28, 2019</span></p>
+                <h2 class="article__header"><a class="article-header__link" href="#">The Slow and Steady Refactor</a></h2>
+                <div class="article__inf">
+                    <a class="article-inf__photo" href="#"></a>
+                    <div class="article-inf__descr">
+                        <p>Author</p>
+                        <a href="#">Robin Rendle</a>
+                    </div>
+                    <div class="article-inf__descr">
+                        <p>1 Comment</p>
+                        <a href="#">Join the Conversation<img src="img/.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="article__txt">
+                    <p>Over the past week or so, I’ve been reading Refactoring by Martin Fowler and it’s all about how to make sweeping changes to a large codebase in a way that doesn’t cause everything to break. I bring this up because there’s a lot of really good notes in this book that have challenged my recent approach to auditing and <a class="article-txt__link" href="#">refactoring a ton of CSS</a>. A lot of the advice is small, kinda obvious stuff, but I realized that I’ve … <a class="article-txt__read" href="#">Read article</a></p>
+                </div>
+                <nav class="article__tag-block">
+                    <a class="article__tag" href="#">refactor</a>
+                </nav>
+            </article>
+            <article class="article artlink">
+                <div class="artlink-main">
+                    <p class="article__type"><a class="artlink__type" href="#"></a><strong>Link</strong><span>January 28, 2019</span></p>
+                    <h2 class="article__header"><a class="article-header__link" href="#">Table design patterns on the web</a></h2>
+                    <p class="artlink__form">From <a class="article-form__link" href="#">www.smashingmagazine.com <img src="" alt=""></a></p>
+                    <div class="article__txt">
+                        <p>Chen Hui Jing has tackled a ton of design patterns for tables that might come in handy when creating tables that are easy to read and responsive for the web:</p>
+                        <p>There are a myriad of table design patterns out there, and which approach you pick depends heavily on the type of data you have and the target audience for that data. At the end of the day, tables are a method for the organisation and presentation of data. It is</p>
+                    <p>...</p>
+                    </div>
+                    <div class="artlink__links">
+                        <a href="#">Read Article</a>
+                        <a href="#">Visit Link</a>
+                    </div>
+                    <div class="article__tag-block">
+                        <a class="article__tag" href="#">tables</a>
+                    </div>
+                </div>
+                <div class="artlink__author">
+                    <a href="#"><img src="img/Photo_Cassie_Evans.jpg" alt="">Shared by <span>Robin Rendle</span></a>
+                </div>
+            </article>
+            <article class="article article_size">
+                <p class="article__type"><strong>Article</strong><span>January 25, 2019</span></p>
+                <h2 class="article__header"><a class="article-header__link" href="#">Need to Test API Endpoints? Two Quick Ways to Do It.</a></h2>
+                <div class="article__inf">
+                    <a class="article-inf__photo" href="#"></a>
+                    <div class="article-inf__descr">
+                        <p>Author</p>
+                        <a href="#">Chris Coyier</a>
+                    </div>
+                    <div class="article-inf__descr">
+                        <p>5 Comments</p>
+                        <a href="#">Join the Conversation<img src="img/.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="article__txt">
+                    <p>Here's a possibility! Perhaps you are testing your JavaScript with a framework like <a class="article-txt__link" href="#">Jasmine</a>. That's nice because you can write lots of tests to cover your application, get a nice little UI to see the output, and even integrate it with build and deploy tools to make your ongoing development work safer.</p>
+                    <p>Now, perhaps there is this zany developer on your team who keeps changing API endpoints on you — quite literally breaking things in the process. You decide … <a class="article-txt__read" href="#">Read article</a></p>
+                </div>
+                <nav class="article__tag-block">
+                    <a class="article__tag" href="#">api</a>
+                </nav>
+            </article>
+            <article class="article article_size">
+                <p class="article__type"><strong>Article</strong><span>January 25, 2019</span></p>
+                <h2 class="article__header"><a class="article-header__link" href="#">Creating Your Own Gravity and Space Simulator</a></h2>
+                <div class="article__inf">
+                    <a class="article-inf__photo" href="#"></a>
+                    <div class="article-inf__descr">
+                        <p>Author</p>
+                        <a href="#">Darrell Huffman</a>
+                    </div>
+                    <div class="article-inf__descr">
+                        <p>13 Comments</p>
+                        <a href="#">Join the Conversation<img src="img/.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="article__txt">
+                    <p>Space is vast. Space is awesome. Space is difficult to understand — or so people tend to think. But in this tutorial I am going to show you that this is not the case. Quite the contrary; the laws that govern the motion of the stars, planets, asteroids and even entire galaxies are incredibly simple. You could argue that if our Universe was created by a developer, she sure was concerned about writing clean code that would be easy to … <a class="article-txt__read" href="#">Read article</a></p>
+                </div>
+                <nav class="article__tag-block">
+                    <a class="article__tag" href="#">convas</a>
+                </nav>
+            </article>
+            <article class="article article_size">
+                <p class="article__type"><strong>Article</strong><span>January 24, 2019</span></p>
+                <h2 class="article__header"><a class="article-header__link" href="#">Putting the Flexbox Albatross to Real Use</a></h2>
+                <div class="article__inf">
+                    <a class="article-inf__photo" href="#"></a>
+                    <div class="article-inf__descr">
+                        <p>Author</p>
+                        <a href="#">Chris Coyier</a>
+                    </div>
+                    <div class="article-inf__descr">
+                        <p>11 Comments</p>
+                        <a href="#">Join the Conversation<img src="img/.svg" alt=""></a>
+                    </div>
+                </div>
+                <div  class="article__txt">
+                    <p>If you hadn't seen it, Heydon posted <a class="article-txt__link" href="#">a rather clever flexbox layout pattern</a> that, in a sense, mimics what you could do with a container query by forcing an element to stack at a certain container width. I was particularly interested, as I was fighting a little layout situation at the time I saw this and thought it could be a solution. Let's take a peak ... <a class="article-txt__read" href="#">Read article</a></p>
+                </div>
+                <nav class="article__tag-block">
+                    <a class="article__tag" href="#">flexbox</a>
+                </nav>
+            </article>
+            <a class="browse-btn" href="#">keep browsing in the archives</a>
+        </section>
+        <section class="monthly">
+            <h2 class="mounthly__header">Monthly Mixup</h2>
+            <div class="mounthly__code mounthly__code_first">
+                <a href="#">
+                    <code>
+                        <span>.step</span> { counter-
+                        increment: <span>my-awesome-
+                        counter</span>; }
+                    </code>
+                </a>
+            </div>
+            <div class="mounth__art mounth__art_first">
+                <p class="mounth-art__type"><strong>Article</strong>Sep 18, 2017</p>
+                <h3 class="mounth-art__header"><a href="#">React + Dataviz</a></h3>
+                <div class="mounth-art__inf">
+                    <a class="mounth-art-inf__photo" href="#"></a>
+                    <div class="mounth-art-inf__descr">
+                        <p>Author</p>
+                        <a href="#">Chris Coyier</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mounth__art mounth__art_second">
+                <p class="mounth-art__type">Article<span>Jan 13, 2019</span></p>
+                <h3 class="mounth-art__header"><a href="#">Slice and Dice a Disc with CSS</a></h3>
+                <div class="mounth-art__inf">
+                    <a class="mounth-art-inf__photo" href="#"></a>
+                    <div class="mounth-art-inf__descr">
+                        <p>Author</p>
+                        <a href="#">Ana Tudor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mounth__art mounth__art_third">
+                <p class="mounth-art__type">Article<span>Dec 12, 2018</span></p>
+                <h3 class="mounth-art__header"><a href="#">Keep Math in the CSS</a></h3>
+                <div class="mounth-art__inf">
+                    <a class="mounth-art-inf__photo" href="#"></a>
+                    <div class="mounth-art-inf__descr">
+                        <p>Author</p>
+                        <a href="#">Chris Coyier</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mounthly__code mounthly__code_second">
+                <a href="#">
+                    <code>
+                        <span>.chart</span> { resize: <span>vertical</span>; }
+                    </code>
+                </a>
+            </div>
+            <div class="mounth__art mounth__art_fourth">
+                <p class="mounth-art__type">Article<span>Nov 8, 2018</span></p>
+                <h3 class="mounth-art__header"><a href="#">Building a Donut Chart with Vue and SVG</a></h3>
+                <div class="mounth-art__inf">
+                    <a class="mounth-art-inf__photo" href="#"><img src="" alt=""></a>
+                    <div class="mounth-art-inf__descr">
+                        <p>Author</p>
+                        <a href="#">Salomone Baquis</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mounth-spons">
+                <p class="mounth-spons__descr">Monthly Sponsor</p>
+                <h3 class="mounth-spons__header">Thanks,monday!</h3>
+                <p class="mounth-spons__txt"><a class="mounth-spons-txt__link" href="#">monday.com</a> is built to help you manage your projects. Plan. Organize. Track. In one visual, collaborative space.</p>
+                <img class="mounth-spons__img" src="img/Mounthly_sponsor.svg" alt="">
+            </div>
+            <div class="mounth-video">
+                <p class="mounth-art__type">Video <span>Oct 18, 2018</span></p>
+                <a class="mounth-video__link" href="#">
+                    <span>#165</span> Building Your Backend with Serverless Functions
+                    <p><i class="far fa-play-circle"></i><span class="mounth-video-link__time">Running Time: </span> 29:06</p></a>
+            </div>
+        </section>
+        <section class="jobs">
+            <header class="jobs__header">
+                <h2>Browse the Jobs</h2>
+                <div>
+                    <p>Powered by</p>
+                    <a class="jobs-header__link" href="#">CodePen Jobs</a>
+                </div>
+                <div>
+                    <a class="jobs-header__button jobs-header__button_first" href="#">Post a Job</a>
+                    <a class="jobs-header__button jobs-header__button_second" href="#">See more Jobs</a>
+                </div>
+            </header>
+            <div class="jobs__block">
+                <a class="jobs__item" href="#">
+                    <p><span>Twenty over Ten</span> is hiring a junior Web Designer / Front-End Developer</p>
+                    <p><em>Remote</em></p>
+                </a>
+                <a class="jobs__item" href="#">
+                    <p><span>SDG</span> is hiring a Front-End Developer</p>
+                </a>
+                <a class="jobs__item" href="#">
+                    <p><span>Unplash</span> is hiring a a React Engineer</p>
+                    <p><em>Remote</em></p>
+                </a>
+                <a class="jobs__item" href="#">
+                    <p><span>Digital Bureau</span> is hiring a Full Stack Developer</p>
+                    <p><em>Denver, CO</em></p>
+                </a>
+                <a class="jobs__item" href="#">
+                    <p><span>Datto</span> is hiring a Senior Full Stack Web Developer</p>
+                    <p><em>Norwalk, CT</em></p>
+                </a>
+                <a class="jobs__item" href="#">
+                    <p><span>Zao</span> is hiring a Wordpress Engineer</p>
+                    <p><em>Remote</em></p>
+                </a>
+            </div>
+        </section>
+        <section class="subscribe">
+            <h2 class="subscribe__header">How do you stay up to date in this fast⁠-⁠moving industry?</h2>
+            <p class="subscribe__descr">A good start is to sign up for our weekly hand-written newsletter. We bring you the best articles and ideas from around the web, and what we think about them.</p>
+            <form class="subscribe__form">
+                <input class="subscribe__input" type="text" placeholder="lovetricks@internet.cool">
+                <button class="subscribe__btn">Subscribe</button>
+            </form>
+            <nav class="subscribe__nav">
+                <ul>
+                    <li><a href="#">Facebook<span>@CSS Tricks</span></a></li>
+                    <li><a href="#">Twitter<span>@CSS</span></a></li>
+                    <li><a href="#">Youtube<span>@realcsstricks</span></a></li>
+                    <li><a href="#">Spectrum<span>@css-tricks</span></a></li>
+                    <li><a href="#">RSS<span>Feed</span></a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer class="footer">
+            <div class="footer__txt-block">
+                <p class="footer__txt">CSS-Tricks* is created, written by, and maintained by <a class="footer-txt__link" href="#">Chris Coyier</a> and <a class="footer-txt__link" href="#">a team</a> of swell people. It is built on WordPress and powered up by Jetpack. It is made possible through <a class="footer-txt__link" href="#">sponsorships</a> from products and services we like.</p>
+                <p class="footer__descr"><span>*</span>May or may not contain any actual "CSS" or "Tricks".</p>
+            </div>
+            <nav class="footer__nav">
+                <h4 class="footer-nav__header">Other Nav</h4>
+                <a class="footer-nav__link" href="#">contact</a>
+                <a class="footer-nav__link" href="#">about</a>
+                <a class="footer-nav__link" href="#">forums</a>
+                <a class="footer-nav__link" href="#">advertise</a>
+                <a class="footer-nav__link" href="#">license</a>
+                <a class="footer-nav__link" href="#">subscrible</a>
+                <a class="footer-nav__link" href="#">guest posting</a>
+                <a class="footer-nav__link" href="#">all authors</a>
+            </nav>
+            <div class="footer__advert">
+                <div class="footer-advert__item">
+                    <a class="footer-advert-item__logo" href="#"></a>
+                    <p><a href="#">CodePen </a>is a place to experiment, debug, and show off your HTML, CSS, and JavaScript creations.</p>
+                </div>
+                <div class="footer-advert__item">
+                    <a class="footer-advert-item__logo" href="#"></a>
+                    <p><a href="#">MediaTemple </a>has been CSS-Tricks web host since day one. Save 20% with code CSSTRICKS.</p>
+                </div>
+                <div class="footer-advert__item">
+                    <a class="footer-advert-item__logo" href="#"></a>
+                    <p><a href="#">ShopTalk </a>is a podcast all about front-end web design and development.</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

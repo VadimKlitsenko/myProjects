@@ -1,0 +1,14 @@
+.aside{
+    background-color: $main-bg;
+    border-top: 1px solid #273543;
+    border-right: 1px solid #273543;
+    border-bottom: 1px solid #273543;
+}
+.side-nav{
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+}
+.side-nav__link{
+    color: $txt-color;
+}

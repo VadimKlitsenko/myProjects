@@ -1,0 +1,53 @@
+@import "scss/modules/nav";
+@import "scss/modules/search";
+
+
+.header {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  background-color: #333;
+  color: #999;
+  &__title{
+    color: #222;
+    font-weight: 500;
+  }
+}
+.headerBottom{
+  margin: 0;
+  background-color: #f8f8f8;
+  align-items: center;
+  padding: 20px 0;
+}
+.headerTop {
+  height: 50px;
+  font-size: 14px;
+  &__wrapper{
+    height: 100%;
+    align-items: center;
+  }
+  &__currency {
+    select {
+      border: none;
+      background-color: transparent;
+      color: #999;
+    }
+  }
+  &__btn{
+    border: none;
+    background-color: transparent;
+    color: #999;
+  }
+  a:hover{
+    color: #fff;
+  }
+  &__basket{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #00C8C8;
+    color: #fff;
+  }
+}

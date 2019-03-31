@@ -1,0 +1,29 @@
+.sort{
+    @include display(flex, start, center);
+    padding-left: 20px;
+    border-bottom: 1px solid #4E5D6C;
+    font-size: 14px;
+}
+.sort__txt{
+    text-transform: capitalize;
+}
+.sort__link{
+    @include linkfix;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    color: $txt-color;
+}
+.sort__link_active{
+    color: $header-bg;
+    font-weight: bold;
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: $header-bg;
+    }
+}

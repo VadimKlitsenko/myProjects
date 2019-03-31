@@ -1,0 +1,64 @@
+@import "../../functions";
+@import "../../variables";
+@import "../../mixins";
+
+.action{
+  &__item{
+    margin: 0;
+    padding: 0;
+    @include flex(center, flex-start);
+    flex-direction: column;
+  }
+  &__img{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  &__content{
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    padding: vw320(35) vw320(20) vw320(75);
+    &::before{
+      content: "01";
+      top: 0;
+      @include flex(center, center);
+      position: absolute;
+      width: vw320(70);
+      height: vw320(70);
+      background: $purple;
+      transform: translateY(-87.5%);
+      font-weight: 600;
+      color: #fff;
+      font-size: vw320(14);
+    }
+    &_02::before{
+      content: "02";
+    }
+    &_03::before{
+      content: "03";
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      top: 0;
+      transform: translate(vw320(26), vw320(-16));
+      width: vw320(18);
+      height: vw320(4);
+      background-color: $purple-underline;
+      border-radius: vw320(4);
+    }
+  }
+  &__title{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: vw320(28);
+    color: $h3-color;
+  }
+  &__text{
+    font-size: vw320(16);
+    margin-bottom: 0;
+  }
+}

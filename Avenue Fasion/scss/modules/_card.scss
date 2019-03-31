@@ -1,0 +1,33 @@
+.card{
+    height: max-content;
+    padding: 60px 30px;
+    &__header{
+        font-weight: 400;
+        font-size: 18px;
+        color: #575153;
+        text-transform: uppercase;
+    }
+    &__descr{
+        font-size: 13px;
+        color: #727272;
+        text-transform: uppercase;
+    }
+    &__text{
+        font-family: "Roboto";
+        font-size: 15px;
+        color: #8e8c8c;
+    }
+    &__btn{
+        display: inline-block;
+        padding: 20px 40px;
+        border: 2px solid #737373;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #737373;
+        &:hover{
+            border-color: #00C8C8;
+            color: #f8f8f8;
+            background-color: #00C8C8;
+        }
+    }
+}

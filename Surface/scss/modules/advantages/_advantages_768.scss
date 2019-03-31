@@ -1,0 +1,64 @@
+@import "../../functions";
+@import "../../variables";
+@import "../../mixins";
+
+.advantages{
+  position: relative;
+  &__list_bottom{
+    position: relative;
+  }
+  &__item{
+    padding: vw768(40) 6.25%;
+    &_right{
+      padding-left: 38%;
+      &:nth-child(2) {
+        background: transparent;
+        position: absolute;
+        transform: translate(-38%, vw768(90));
+      }
+    }
+    &_left{
+      padding-right: 38%;
+      &:nth-child(2){
+        text-align: right;
+        position: absolute;
+        background: transparent;
+        top: 10%;
+      }
+    }
+  }
+  &__title{
+    font-size: vw768(32);
+    padding-left: vw768(30);
+    &::before{
+      transform: translate(0, vw768(6));
+      font-size: vw768(18);
+    }
+    &::after{
+      transform: translate(0, vw768(30));
+      width: vw768(20);
+      height: vw768(5);
+      border-radius: vw768(5);
+    }
+  }
+  &__header{
+    font-size: vw768(80);
+  }
+  &__img_athlet{
+    @media(max-width: 768px){
+      img{
+        width: 65%;
+      }
+    }
+    @media(min-width: 769px){
+      img{
+        width: 50%;
+      }
+    }
+  }
+  &__img_basketballer{
+    img{
+      width: 55%;
+    }
+  }
+}

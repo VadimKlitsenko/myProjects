@@ -1,0 +1,17 @@
+.footer{
+    @include display(grid, minmax(max-content, 80%) minmax(max-content, 10%) minmax(max-content, 10%), 1fr){
+        grid-column-gap: 30px;
+    };
+    height: 100px;
+    background-color: $footer-bg;
+}
+.footer__link{
+    @include linkfix;
+    @include display(flex, flex-start, center);
+    padding-left: 30px;
+    color: $footer-txt;
+    font-family: sans-serif;
+    &:nth-child(2){
+        justify-content: flex-end;
+    }
+}

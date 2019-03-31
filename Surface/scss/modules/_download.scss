@@ -1,0 +1,40 @@
+@import "../functions";
+@import "../variables";
+@import "../mixins";
+
+
+.download {
+  @include flex(center, center);
+  flex-direction: column;
+  &__link {
+    @include flex(center, center);
+    background-color: $purple;
+    width: vw320(280);
+    font-size: vw320(8);
+    color: #fff;
+    border-radius: 100px;
+  }
+  &__link + &__link{
+    margin-top: vw320(15);
+  }
+  &__svg{
+    box-sizing: border-box;
+    flex-basis: 40%;
+    @include flex(flex-end, center);
+    padding: vw320(4) 0;
+    svg{
+      width: vw320(25);
+      height: vw320(25);
+      padding-right: vw320(10);
+    }
+  }
+  &__txt{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    &_bold{
+     font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import "../functions";
+
+@media (max-width: 425px){
+  .logo{
+    width: vw320(135);
+    height: vw320(40);
+  }
+}

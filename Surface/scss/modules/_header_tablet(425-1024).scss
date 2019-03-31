@@ -1,0 +1,17 @@
+@import "../functions";
+.header {
+  min-height: vw768(280);
+  max-height: vw768(340);
+  &__logo {
+    width: vw768(135);
+    height: vw768(135);
+    padding: vw768(25) vw768(15);
+    border-radius: vw768(30);
+  }
+  &__title{
+    font-size: vw768(80);
+  }
+  &__descr{
+    font-size: vw768(36);
+  }
+}

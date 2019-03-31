@@ -1,0 +1,17 @@
+//functions variables mixins
+@import "functions";
+@import "variables";
+@import "mixins";
+
+@media (min-width: 1024px){
+  //standart modules
+
+  @import "modules/logo-txt_descktop(1024+)";
+  @import "modules/download_descktop(1024+)";
+  @import "modules/header_descktop(1024+)";
+
+  //modules
+  @import "modules/first-screen/first-screen_1024";
+  @import "modules/advantages/advantages_1024";
+  @import "modules/act1on/action_1024";
+}

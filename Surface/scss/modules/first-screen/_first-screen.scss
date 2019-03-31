@@ -1,0 +1,27 @@
+@import "../../functions";
+@import "../../variables";
+@import "../../mixins";
+
+.first-screen{
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  padding: vh320(30) 6.25% vh320(80) 6.25%;
+  background: linear-gradient(rgba(9,12,53,0.9), rgba(9,12,53,0.9)), url(../img/football_767.jpg) no-repeat center/cover;
+  @include flex(space-between, center);
+  flex-direction: column;
+  &__title{
+    font-size: vw320(28);
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    @include flex(center, flex-start);
+    flex-direction: column;
+    &_right{
+      align-self: flex-end;
+      width: 75%;
+    }
+  }
+}
+
+

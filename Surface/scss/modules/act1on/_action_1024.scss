@@ -1,0 +1,66 @@
+@import "../../functions";
+@import "../../mixins";
+
+.action{
+  &__item{
+    @include grid(1fr 1fr, 1fr);
+    &:nth-child(2){
+      .action__img{
+        grid-column: 2/3;
+      }
+      .action__content{
+        padding: 0 vw1920(130) 0 vw1920(210);
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+    }
+  }
+  &__img{
+    height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content{
+    @include flex(center, flex-start);
+    flex-direction: column;
+    padding: 0 vw1920(210) 0 vw1920(130);
+    height: 100%;
+    &::before{
+      font-size: vw1920(24);
+      width: vw1920(168);
+      height: vw1920(155);
+      top: 32%;
+      transform: none;
+    }
+    &_01::before, &_03::before {
+      left: vw1920(-84);
+    }
+    &_02::before{
+      top: 34%;
+      right: vw1920(-84);
+    }
+    &::after{
+      transform: none;
+      width: vw1920(24);
+      height: vw1920(5);
+      top: 47%;
+    }
+    &_01::after, &_03::after{
+      left: vw1920(-13);
+    }
+    &_02::after{
+      right: vw1920(-13);
+    }
+    &_03::after{
+      top: 45%;
+    }
+  }
+  &__title{
+    font-size: vw1920(80);
+  }
+  &__text{
+    font-size: vw1920(24);
+  }
+}

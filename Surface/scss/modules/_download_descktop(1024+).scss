@@ -1,0 +1,21 @@
+@import "../functions";
+
+
+.download{
+  flex-direction: row;
+  &__link + &__link{
+    margin: 0 0 0 vw1920(50);
+  }
+  &__link{
+    width: vw1920(320);
+    font-size: vw1920(14);
+  }
+  &__svg{
+    padding: 0 vw1920(20) 0 0;
+    svg{
+      padding: vw1920(10) 0;
+      width: vw1920(50);
+      height: vw1920(50);
+    }
+  }
+}

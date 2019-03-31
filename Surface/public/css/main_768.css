@@ -1,0 +1,99 @@
+@media (min-width: 425px) and (max-width: 1024px) {
+  .logo {
+    width: 27.34375vw;
+    height: 7.8125vw; }
+  .download {
+    flex-direction: row; }
+    .download__link + .download__link {
+      margin: 0 0 0 3.90625vw; }
+    .download__link {
+      width: 40.36458vw;
+      font-size: 1.82292vw; }
+    .download__svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      padding-left: 3.90625vw; }
+      .download__svg svg {
+        padding: 1.95313vw 0;
+        width: 5.20833vw;
+        height: 5.20833vw; }
+  .first-screen {
+    padding-right: 7.8%;
+    padding-left: 7.8%; }
+    .first-screen__title {
+      font-size: 8.33333vw; }
+  .advantages {
+    position: relative; }
+    .advantages__list_bottom {
+      position: relative; }
+    .advantages__item {
+      padding: 5.20833vw 6.25%; }
+      .advantages__item_right {
+        padding-left: 38%; }
+        .advantages__item_right:nth-child(2) {
+          background: transparent;
+          position: absolute;
+          transform: translate(-38%, 11.71875vw); }
+      .advantages__item_left {
+        padding-right: 38%; }
+        .advantages__item_left:nth-child(2) {
+          text-align: right;
+          position: absolute;
+          background: transparent;
+          top: 10%; }
+    .advantages__title {
+      font-size: 4.16667vw;
+      padding-left: 3.90625vw; }
+      .advantages__title::before {
+        transform: translate(0, 0.78125vw);
+        font-size: 2.34375vw; }
+      .advantages__title::after {
+        transform: translate(0, 3.90625vw);
+        width: 2.60417vw;
+        height: 0.65104vw;
+        border-radius: 0.65104vw; }
+    .advantages__header {
+      font-size: 10.41667vw; } }
+  @media (min-width: 425px) and (max-width: 1024px) and (max-width: 768px) {
+    .advantages__img_athlet img {
+      width: 65%; } }
+  @media (min-width: 425px) and (max-width: 1024px) and (min-width: 769px) {
+    .advantages__img_athlet img {
+      width: 50%; } }
+
+@media (min-width: 425px) and (max-width: 1024px) {
+    .advantages__img_basketballer img {
+      width: 55%; }
+  .action__content {
+    padding: 10.41667vw 11.06771vw 10.41667vw 3.90625vw; }
+    .action__content::before {
+      width: 14.97396vw;
+      height: 14.97396vw;
+      font-size: 3.125vw;
+      transform: translateY(-60%); }
+    .action__content::after {
+      transform: translate(5.85938vw, 0.65104vw);
+      width: 3.125vw;
+      height: 0.65104vw; }
+  .action__title {
+    font-size: 10.41667vw; }
+  .action__text {
+    font-size: 3.125vw; }
+  .header {
+    min-height: 36.45833vw;
+    max-height: 44.27083vw; }
+    .header__logo {
+      width: 17.57813vw;
+      height: 17.57813vw;
+      padding: 3.25521vw 1.95313vw;
+      border-radius: 3.90625vw; }
+    .header__title {
+      font-size: 10.41667vw; }
+    .header__descr {
+      font-size: 4.6875vw; }
+  .footer {
+    padding: 13.02083vh 6.25% 3.125vh; } }
+
+/*# sourceMappingURL=main_768.css.map */

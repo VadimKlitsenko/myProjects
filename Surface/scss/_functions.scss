@@ -1,0 +1,22 @@
+@function vw320($px){
+  @return ($px*100/320)+vw;
+}
+
+@function vw768($px){
+  @return ($px*100/768)+vw;
+}
+
+@function vw1920($px){
+  @return ($px*100/1920)+vw;
+}
+
+@function vh320($px){
+  @return ($px*100/570)+vh;
+}
+@function vh768($px){
+  @return ($px*100/960)+vh;
+}
+
+@function vh1920($px){
+  @return ($px*100/960)+vh;
+}

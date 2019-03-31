@@ -1,0 +1,28 @@
+.footerNav{
+  list-style: none;
+  padding: 0 0 50px 0;
+  justify-content: center;
+  &__item{
+    padding-top: 60px;
+  }
+  &__header{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #575153;
+  }
+}
+.footerNavList{
+  list-style: none;
+  padding: 0;
+  &__item_spacer{
+    margin-bottom: 10px;
+  }
+  &__link{
+    font-weight: 300;
+    font-size: 13px;
+    color: #727272;
+    &:hover{
+      color: #00C8C8;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+//functions variables mixins
+@import "functions";
+@import "variables";
+@import "mixins";
+
+@media (min-width: 425px) and (max-width: 1024px){
+  //standart modules
+
+  @import "modules/logo-txt_tablet(425_1024)";
+  @import "modules/download_tablet(425-1024)";
+
+  //modules
+  @import "modules/first-screen/first-screen_768";
+  @import "modules/advantages/advantages_768";
+  @import "modules/act1on/action_768";
+  @import "modules/footer/footer_768";
+}

@@ -1,0 +1,43 @@
+.films{
+    @include display(grid, repeat(auto-fill, minmax(200px, 1fr)), repeat(4, 1fr));
+    grid-gap: 15px;
+    padding: 20px;
+}
+.card{
+    margin: 0;
+    background-color: #4E5D6C;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card__poster{
+    display: block;
+    img{
+        width: 100%;   
+    }
+}
+.card__descr{
+    padding: 10px;
+}
+.card__name{
+    @include linkfix;
+    display: block;
+    padding: 10px 0;
+    color: $txt-color;
+    &:hover{
+        color: #fff;
+    }
+}
+.card__svg{
+    @include display(flex, space-between, center);
+    padding: 10px 0;
+}
+a.card__star{
+    @include linkfix;
+    @include display(flex, start, center);
+    svg + svg{
+        margin-left: 5px;
+    }
+}
+.card__dvd{
+    display: inline-block;
+}

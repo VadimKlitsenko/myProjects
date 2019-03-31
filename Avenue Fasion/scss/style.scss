@@ -1,0 +1,20 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/grid";
+
+@import "scss/fonts";
+@import "scss/header";
+@import "scss/firstScreen";
+@import "scss/cities";
+@import "scss/map";
+@import "scss/footer";
+
+body{
+  font-family: "Montserrat";
+}
+.main{
+  padding-bottom: 130px;
+}

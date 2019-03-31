@@ -1,0 +1,15 @@
+@import "../../functions";
+@import "../../variables";
+@import "../../mixins";
+
+.first-screen{
+  padding: vw1920(40) 10% vw1920(110) 10%;
+  &__title{
+    margin: 0;
+    font-size: vw1920(90);
+    width: 100%;
+    &_right{
+      text-align: right;
+    }
+  }
+}

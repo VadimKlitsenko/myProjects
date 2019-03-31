@@ -1,0 +1,9 @@
+@import "../../functions";
+
+.first-screen{
+  padding-right: 7.8%;
+  padding-left: 7.8%;
+  &__title{
+    font-size: vw768(64);
+  }
+}

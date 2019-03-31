@@ -1,0 +1,24 @@
+@import "../functions";
+@import "../variables";
+@import "../mixins";
+
+.download{
+  flex-direction: row;
+  &__link + &__link{
+    margin: 0 0 0 vw768(30);
+  }
+  &__link{
+    width: vw768(310);
+    font-size: vw768(14);
+  }
+  &__svg{
+    @include flex(center, center);
+    padding: 0;
+    padding-left: vw768(30);
+    svg{
+      padding: vw768(15) 0;
+      width: vw768(40);
+      height: vw768(40);
+    }
+  }
+}

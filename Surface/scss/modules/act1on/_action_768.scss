@@ -1,0 +1,26 @@
+@import "../../functions";
+@import "../../variables";
+@import "../../mixins";
+
+.action{
+  &__content{
+    padding: vw768(80) vw768(85) vw768(80) vw768(30);
+    &::before{
+      width: vw768(115);
+      height: vw768(115);
+      font-size: vw768(24);
+      transform: translateY(-60%);
+    }
+    &::after{
+      transform: translate(vw768(45), vw768(5));
+      width: vw768(24);
+      height: vw768(5);
+    }
+  }
+  &__title{
+    font-size: vw768(80);
+  }
+  &__text{
+    font-size: vw768(24);
+  }
+}
